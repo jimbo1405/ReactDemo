@@ -17,19 +17,24 @@ ol, ul {
   margin-bottom: 10px;
 }
 
+.board {
+  width: 600px;
+  height: 600px;
+}
+
 .square {
   background: #fff;
   border: 1px solid #999;
   float: left;
-  font-size: 24px;
+  font-size: 100px;
   font-weight: bold;
   line-height: 34px;
-  height: 34px;
+  height: 200px;
   margin-right: -1px;
   margin-top: -1px;
   padding: 0;
   text-align: center;
-  width: 34px;
+  width: 200px;
 }
 
 .square:focus {
@@ -43,8 +48,30 @@ ol, ul {
 .game {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+}
+
+.game-board {
+  padding: 50px;
+  flex-basis: 70%;
+  display: flex;
+  justify-content: center;
 }
 
 .game-info {
+  flex-basis: 30%;
   margin-left: 20px;
+}
+
+.dialog {
+  z-index: 999;
+  position: absolute;
+  opacity: 88%;
+  left: 40%;
+  top: 30%;
+  background-color: lightgray;
+  width: 25%;
+  height: 30%;
+  border-radius: 3%;
+  align-content: center;
 }
